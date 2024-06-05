@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестування</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Тестування</h1>
+    <p>Перевірка знання таблиці істинності логічного елемента</p>
+    <table>
+        <tr>
+            <th>x1</th>
+            <th>x2</th>
+            <th>y</th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+    </table>
+    <br>
+    <label for="logicElement">Виберіть логічний елемент:</label>
+    <select id="logicElement">
+        <option value="I">Елемент I (кон'юнкція)</option>
+        <option value="ABO">Елемент АБО (диз'юнкція)</option>
+        <option value="XOR">Елемент ВИКЛЮЧАЮЧЕ АБО (нерівнозначність)</option>
+        <option value="NOR">Елемент АБО-НЕ (стрілка Пірса)</option>
+        <option value="NAND">Елемент I-НЕ (штрих Шеффера)</option>
+        <option value="XNOR">Елемент ВИКЛЮЧАЮЧЕ АБО-НЕ (рівнозначність)</option>
+    </select>
+    <br><br>
+    <button id="verifyBtn">Перевірити</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
